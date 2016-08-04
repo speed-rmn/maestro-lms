@@ -7,7 +7,7 @@
   color: #444;
 }
 
-dt, dd {
+.faq dt, .faq dd {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -17,7 +17,7 @@ dt, dd {
   min-height: 60px;
 }
 
-dl *:before {
+.faq dt:before, .faq dd:before {
   content: "Q";
   font: 72px/1 "Goudy Old Style", "Book Antiqua", "Palatino", serif;
   color: #e9e9e9; 
@@ -29,18 +29,18 @@ dl *:before {
   transform: translateY(-50%);
 }
 
-dd:before {
+.faq dd:before {
   content: "A";
   color: white;
   z-index: 0;
 }
 
-dt {
+.faq dt {
   margin: 10px 0;
   padding-top: 1.5em;
 }
 
-dd {
+.faq dd {
 /*   background-color: #AD9FB1; */
 /*   background-color: #856E8F; */
   background-color: #eee;
@@ -48,7 +48,7 @@ dd {
   padding-bottom: 1.5em;
 }
 
-dd + dt {
+.faq dd + dt {
   margin-top: 0;
 /*   border-top: 1px solid #e9e9e9; */
 }
