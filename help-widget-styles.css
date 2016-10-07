@@ -17,6 +17,7 @@
   margin: 0.5em 0;
 }
 
+.faq a,
 .faq dt:hover,
 .faq dt.expanded {
   color: #602d6c;
