@@ -1,0 +1,20 @@
+/* STYLES FOR NAVIGATION TABLES WITH ICONS */
+
+.nav-with-icons {
+  border: none;
+  text-align: center;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.nav-with-icons a {
+  box-shadow: none;
+  font-family:  "Open Sans", Tahoma, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 11pt; /* to match header size; yep, they chose 11pt, like a real website */
+}
+
+.nav-with-icons img {
+  /* Normalize icon size */
+  max-width: 72px;
+  max-height: 72px;
+}
