@@ -1,4 +1,7 @@
 (function linkHeaderImage($) {
+  // remove any UI generated for this widget by the LMS; parent <script> tag expected to have id of "link-header-image-script"
+  $("#link-header-image-script").parents(".widget").hide();
+
   var homeLinkCSS = {
     "font-size": "larger",
     "line-height": 0.9
@@ -13,7 +16,4 @@
 
   // make header image link back to home; hilariously, the header image is already in an <a> tag, it just has no 'href'.  What a system.
   $(".brandimage").find("a").attr("href", homeURL);
-  
-  // remove any UI generated for this widget; parent <script> tag expected to have id of "link-header-image-script"
-  $("#link-header-image-script").parents(".widget").hide();
 })(jQuery);
