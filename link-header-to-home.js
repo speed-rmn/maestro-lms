@@ -1,7 +1,7 @@
 (function linkHeaderImage($) {
   var homeLinkCSS = {
     "font-size": "larger",
-    "line-height": 0.5
+    "line-height": 0.9
   };
 
   // attempt to get current home URL from "Home" link on page
