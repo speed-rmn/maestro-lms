@@ -1,5 +1,6 @@
 jQuery(function linkHeaderImage($) {
-  // remove any UI generated for this widget by the LMS; parent <script> tag expected to have id of "link-header-image-script"
+  // remove any UI generated for this widget by the LMS
+  // parent <script> tag this fn lives in must have id of "link-header-image-script"
   $("#link-header-image-script").parents(".widget").hide();
 
   var homeLinkCSS = {
@@ -7,7 +8,7 @@ jQuery(function linkHeaderImage($) {
     "line-height": 0.9
   };
 
-  // attempt to get current home URL from "Home" link on page
+  // attempt to get current home URL from "Home" link on page; make text link a little larger
   var $home = $(".learnerhome").find("a").css(homeLinkCSS);
   var homeURL = $home.attr("href");
 
